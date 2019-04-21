@@ -40,6 +40,11 @@ class RegisterViewController: UIViewController {
     
     @IBAction func BackToRegister(_ sender: UIBarButtonItem) {
         
+        let name = nameTextField.text!
+        let user = userTextField.text!
+        let password = passwordTextField.text!
+        
+        
         print("You Click BackToRegister")
         
         performSegue(withIdentifier: "BackToAuthen", sender: nil)
