@@ -19,14 +19,10 @@ class ViewController: UIViewController {
     
     
     
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
+    } // Main Method
     
     
     @IBAction func loginButton(_ sender: UIButton) {
@@ -37,36 +33,18 @@ class ViewController: UIViewController {
         
         
         
-    }
-    
-    
-    
+    } //login Button
     
     
     @IBAction func registerButton(_ sender: UIButton) {
         
         print("You Click Register")
         
+        performSegue(withIdentifier: "GoToRegister", sender: nil)
         
         
-        
-        
-        
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    } // Register Button
     
 
-
-}
+} //Main Class
 
