@@ -11,11 +11,14 @@ import UIKit
 class RegisterViewController: UIViewController {
     
     
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+    @IBOutlet weak var userTextField: UITextField!
     
     
     
-    
-    
+    @IBOutlet weak var passwordTextField: UITextField!
     
     
 
