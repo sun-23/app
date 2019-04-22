@@ -171,12 +171,12 @@
                                     <navigationItem title="Title" id="rDm-bi-S6C">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="ArrowBack" id="Aq8-9G-Sc9">
                                             <connections>
-                                                <action selector="UpLoadButton:" destination="zku-A2-MjU" id="x1L-IJ-qGg"/>
+                                                <action selector="BackToAuthen:" destination="zku-A2-MjU" id="f7y-iN-Yls"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="V1D-u1-941">
                                             <connections>
-                                                <action selector="BackToRegister:" destination="zku-A2-MjU" id="BB5-OD-VBb"/>
+                                                <action selector="UpLoadButton:" destination="zku-A2-MjU" id="onq-S5-odg"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

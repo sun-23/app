@@ -29,25 +29,15 @@ class RegisterViewController: UIViewController {
     }
     
     
-    @IBAction func UpLoadButton(_ sender: UIBarButtonItem) {
-        
-        print("You Click UpLoad")
-        
-      performSegue(withIdentifier: "BackToAuthen", sender: nil)
-        
-        
+    @IBAction func BackToAuthen(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "BackToAuthen", sender: nil)
     }
     
-    @IBAction func BackToRegister(_ sender: UIBarButtonItem) {
-        
-        let name = nameTextField.text!
-        let user = userTextField.text!
-        let password = passwordTextField.text!
-        
-        
-        print("You Click BackToRegister")
-        
+   
+    @IBAction func UpLoadButton(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "BackToAuthen", sender: nil)
+        
+        print("You Click UpLoad")
         
     }
     
