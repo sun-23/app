@@ -39,6 +39,32 @@ class RegisterViewController: UIViewController {
         
         print("You Click UpLoad")
         
+        //Get Value Form TextField
+        let name = nameTextField.text!
+        let user = userTextField.text!
+        let password = passwordTextField.text!
+        
+        //Show Massage on Console
+        print("name ==>> \(name)")
+        print("user ==>> \(user)")
+        print("password ==>> \(password)")
+        
+        //Check Spece
+        if ((name.count == 0) || (user.count == 0) || (password.count == 0) ) {
+            print("Have Space")
+        } else {
+            print("No Space")
+        }
+        
+        
+        
+        
     }
+    
+    
+    
+    
+    
+    
     
 }
