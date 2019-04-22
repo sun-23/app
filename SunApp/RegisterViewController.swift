@@ -52,19 +52,34 @@ class RegisterViewController: UIViewController {
         //Check Spece
         if ((name.count == 0) || (user.count == 0) || (password.count == 0) ) {
             print("Have Space")
+            myAlert(titleString: "Have Space", massageString: "กรุณาใส่ข้อความให้ครบทุกช่อง")
         } else {
-            print("No Space") 
+            print("No Space")
         }
         
         
         
         
-    }
+    }// UpLoadButton
+    
+    
+    // myAlert in Void Type Function ฟังชั่นหรือเมธอทที่ทำงานแล้วไม่คืนค่ากลับมา
+    func myAlert(titleString:String,massageString:String) -> Void {
+        
+        // Create Alert Object
+        let objAlert = UIAlertController(title: titleString, message: massageString, preferredStyle: UIAlertController.Style.alert)
+        
+        //Create Button on Alert
+        objAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) in
+            objAlert.dismiss(animated: true, completion: nil)
+        }))
+        
+        present(objAlert,animated: true,completion: nil)
+        
+    }// myAlert
     
     
     
     
     
-    
-    
-}
+}//Main Class
