@@ -53,7 +53,7 @@ class RegisterViewController: UIViewController {
         if ((name.count == 0) || (user.count == 0) || (password.count == 0) ) {
             print("Have Space")
         } else {
-            print("No Space")
+            print("No Space") 
         }
         
         
